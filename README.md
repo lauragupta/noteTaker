@@ -24,7 +24,8 @@ This project is a live site and does not require any installations. Check it out
 ## Usage 
 
 [Note Taker website](http://fierce-eyrie-06541.herokuapp.com/)
-
+![Typing in a note](public/assets/Images/TypingNote.png)
+![Note Saved](public/assets/Images/NoteSaved.png)
 
 ## Built With
 
