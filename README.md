@@ -4,7 +4,7 @@
 
 ## Description  
 
-This project starts on a landing page and then takes you into a note page. On the note page, you can enter a note title and note text that you can then save. The note will populate on the list at the left-hand side. 
+This is a live server project where a site starts on a landing page. It then takes you into a note page. On the note page, you can enter a note title and note text that you can then save it using the disk iocn. The note title will populate on the list at the left-hand side. 
 
 
 ## Table of Contents   
@@ -23,8 +23,14 @@ This project is a live site and does not require any installations. Check it out
 
 ## Usage 
 
-[Note Taker website](http://fierce-eyrie-06541.herokuapp.com/)
+[Note Taker LIVE website!](http://fierce-eyrie-06541.herokuapp.com/)
+
+Here is a screenshot of someone adding in a Birthday Note
+
 ![Typing in a note](public/assets/Images/TypingNote.png)
+
+And here is the Birthday Note once it is saved. 
+
 ![Note Saved](public/assets/Images/NoteSaved.png)
 
 ## Built With
@@ -44,7 +50,7 @@ This project is a live site and does not require any installations. Check it out
 
 * **Laura Gupta** 
 
-- [Link to Portfolio Site](https://lauragupta.github.io/resumepage/)
+- [Link to Portfolio Site](https://lauragupta.github.io/firstPortfolio/)
 - [Link to Github](https://github.com/lauragupta?tab=repositories)
 - [Link to LinkedIn](https://www.linkedin.com/in/laura-gupta-5a277158/)
 
