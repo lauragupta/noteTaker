@@ -7,7 +7,10 @@ const fs = require('fs');
 const util = require('util');
 // import db from "./Develop/db/db.json";
 
-const PORT = 3001;
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3001;
+}
 
 const app = express();
 
@@ -77,7 +80,7 @@ app.post('/api/notes', (req, res) => {
     }
 });
 
-app.listen(PORT, () =>
-    console.log(`App is listening at http://localhost:${PORT}`)
+app.listen(port, () =>
+    console.log(`App is listening at http://localhost:${port}`)
 );
 
