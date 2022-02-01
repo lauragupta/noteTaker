@@ -28,11 +28,12 @@ app.get('/', (req, res) => {
 //GET route for note page - notes
 app.get('/notes',(req, res) => {
     res.sendFile(path.join(__dirname, '/public/notes.html'));
-    readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
 });
 
 //Get route for note page - title
-app.get('/api/notes', (req, res) => res.json(textData));
+app.get('/api/notes', (req, res) => {
+    readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
+});
 
 //fs.readFile - promisified version
 readFromFile = util.promisify(fs.readFile);
