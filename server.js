@@ -37,7 +37,7 @@ readFromFile = util.promisify(fs.readFile);
 //writeToFile
 const writeToFile = (destination, content) =>
     fs.writeFile(destination, JSON.stringify(content), (err) =>
-    err? console.error(err) :console.info(`Note written to ${destination}`)
+    err ? console.error(err) : console.info(`Note written to ${destination}`)
 );
 
 //defining readAndAppend
@@ -67,8 +67,11 @@ app.post('/api/notes', (req, res) => {
         };
 
         readAndAppend(newNote, './db/db.json');
-
-        res.json(`Your note was added successfully`);
+        const response = {
+            status: 'success',
+            body: newNote,
+        };
+        res.json(response);
     } else {
         res.error('Error in adding note');
     }
